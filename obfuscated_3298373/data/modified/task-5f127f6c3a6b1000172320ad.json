@@ -1,0 +1,295 @@
+{
+  "task_id": "5f127f6c3a6b1000172320ad",
+  "created_at": "2020-07-18T04:49:48.480Z",
+  "completed_at": "2020-07-18T05:18:52.138Z",
+  "type": "annotation",
+  "status": "completed",
+  "instruction": "Draw a tight box around each object.",
+  "params": {
+    "attachment": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_2.jpg",
+    "attachment_type": "image",
+    "objects_to_annotate": [
+      "traffic_control_sign",
+      "construction_sign",
+      "information_sign",
+      "policy_sign",
+      "non_visible_face"
+    ],
+    "with_labels": true,
+    "min_width": 0,
+    "min_height": 0,
+    "examples": [],
+    "annotation_attributes": {
+      "occlusion": {
+        "description": "What percent of the object is occluded?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "truncation": {
+        "description": "What percent of the object is truncated?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "background_color": {
+        "description": "What color is the background of the sign?",
+        "choices": [
+          "white",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "other",
+          "not_applicable"
+        ]
+      }
+    }
+  },
+  "is_test": false,
+  "urgency": "standard",
+  "metadata": {},
+  "processed_attachments": [],
+  "project": "Traffic Sign Detection",
+  "priority": 0,
+  "customer_review_status": "rejected",
+  "customer_review_comments": [
+    "",
+    "Difference between labeling \"traffic_control_sign\" and \"non_visible_face\". Although I cannot see the face, I can tell its a \"traffic_control_sign\". How should I label? Probably just need be consistent."
+  ],
+  "prior_responses": [],
+  "callback_url": "https://example.com/callback",
+  "response": {
+    "annotations": [
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "0565b84a-8a1b-4486-ad36-fef148894b03",
+        "width": 14,
+        "height": 40,
+        "geometry": "box",
+        "left": 559,
+        "top": 503
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "25%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "839ffc1f-b6cc-4d31-8524-dbb3d8fde3ee",
+        "width": 29,
+        "height": 28,
+        "geometry": "box",
+        "left": 546,
+        "top": 581
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "4972bf86-e345-4a0f-8bb5-9d2a86569b3e",
+        "width": 12,
+        "height": 32,
+        "geometry": "box",
+        "left": 734,
+        "top": 619
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "8f9e0df3-7534-46ab-b7b4-dbae311c88cd",
+        "width": 13,
+        "height": 16,
+        "geometry": "box",
+        "left": 718,
+        "top": 664
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "dda85426-ba5f-4910-b92b-e50fc0bfb793",
+        "width": 7,
+        "height": 10,
+        "geometry": "box",
+        "left": 914,
+        "top": 672
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "green"
+        },
+        "uuid": "c8dd26d1-8cc5-4d96-8012-23b744871fcc",
+        "width": 14,
+        "height": 5,
+        "geometry": "box",
+        "left": 945,
+        "top": 681
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "75%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "0bc2ab2c-16b0-461e-8866-08f3bdc87238",
+        "width": 16,
+        "height": 39,
+        "geometry": "box",
+        "left": 1151,
+        "top": 542
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "green"
+        },
+        "uuid": "2d60d1ad-81fa-4135-afb1-9f43fc6f4a13",
+        "width": 48,
+        "height": 15,
+        "geometry": "box",
+        "left": 1185,
+        "top": 572
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "fd7a83ed-cbcc-4b98-8746-98c7551cb4a2",
+        "width": 33,
+        "height": 12,
+        "geometry": "box",
+        "left": 1318,
+        "top": 685
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "ec2b36f3-75d1-42fe-adea-000dd0064e76",
+        "width": 15,
+        "height": 11,
+        "geometry": "box",
+        "left": 1291,
+        "top": 677
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "c1feef88-40a5-4275-b631-8cdbd554cb08",
+        "width": 11,
+        "height": 29,
+        "geometry": "box",
+        "left": 1328,
+        "top": 654
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "e0294801-e987-4549-9bea-23d5b9a8622b",
+        "width": 19,
+        "height": 23,
+        "geometry": "box",
+        "left": 1771,
+        "top": 649
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "665c4b67-3600-4523-b780-340e55adcad4",
+        "width": 19,
+        "height": 24,
+        "geometry": "box",
+        "left": 1742,
+        "top": 647
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "5da3cb2e-5cf3-4919-9511-bccbbbaf163d",
+        "width": 32,
+        "height": 46,
+        "geometry": "box",
+        "left": 1748,
+        "top": 532
+      }
+    ],
+    "global_attributes": {},
+    "is_customer_fix": false
+  },
+  "customer_reviewed_by": "fieldengineering+observesign@scale.com",
+  "customer_audit_time_secs": 1089.49,
+  "customer_audited_at": "2020-12-08T18:12:46.313Z",
+  "audits": [
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2020-12-08T18:12:46.313Z",
+      "audit_time_secs": 1089.49,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2020-10-15T16:22:53.006Z",
+      "audit_time_secs": 76.604,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    }
+  ],
+  "updated_at": "2022-04-18T13:57:48.823Z",
+  "work_started": true,
+  "isProcessed": true
+}

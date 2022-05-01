@@ -1,0 +1,255 @@
+{
+  "task_id": "5f127f643a6b1000172320a5",
+  "created_at": "2020-07-18T04:49:40.294Z",
+  "completed_at": "2020-07-18T05:50:10.213Z",
+  "type": "annotation",
+  "status": "completed",
+  "instruction": "Draw a tight box around each object.",
+  "params": {
+    "attachment": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_5.jpg",
+    "attachment_type": "image",
+    "objects_to_annotate": [
+      "traffic_control_sign",
+      "construction_sign",
+      "information_sign",
+      "policy_sign",
+      "non_visible_face"
+    ],
+    "with_labels": true,
+    "min_width": 0,
+    "min_height": 0,
+    "examples": [],
+    "annotation_attributes": {
+      "occlusion": {
+        "description": "What percent of the object is occluded?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "truncation": {
+        "description": "What percent of the object is truncated?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "background_color": {
+        "description": "What color is the background of the sign?",
+        "choices": [
+          "white",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "other",
+          "not_applicable"
+        ]
+      }
+    }
+  },
+  "is_test": false,
+  "urgency": "standard",
+  "metadata": {},
+  "processed_attachments": [],
+  "project": "Traffic Sign Detection",
+  "priority": 0,
+  "customer_review_status": "accepted",
+  "customer_review_comments": [
+    "\"Over 3 tons\" sign is missing from labeling. \"Except one block for deliveries\" should also be labeled, separately! ",
+    ""
+  ],
+  "prior_responses": [],
+  "callback_url": "https://example.com/callback",
+  "response": {
+    "annotations": [
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "1aba6212-74e1-44e9-b725-5e1d93e8d5b8",
+        "width": 2000,
+        "height": 896,
+        "geometry": "box",
+        "left": 1335,
+        "top": 270
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "6fc799c0-6bc3-45c2-a15a-10a6d0fd4d08",
+        "width": 5,
+        "height": 7,
+        "geometry": "box",
+        "left": 1132,
+        "top": 280
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "25%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "90e2c226-64ca-4568-b3a4-f59daf5b6583",
+        "width": 9,
+        "height": 14,
+        "geometry": "box",
+        "left": 982,
+        "top": 258
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "2d088486-a3eb-42f9-a199-a3cee042bee7",
+        "width": 7,
+        "height": 9,
+        "geometry": "box",
+        "left": 914,
+        "top": 295
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "90eddddc-8c3a-47e1-adbb-8029a16d59b5",
+        "width": 7,
+        "height": 9,
+        "geometry": "box",
+        "left": 914,
+        "top": 304
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "b9ce0b31-a7ff-48a6-86b5-3930e3d65179",
+        "width": 11,
+        "height": 13,
+        "geometry": "box",
+        "left": 833,
+        "top": 306
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "25%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "97702974-1d67-40cb-bd5a-08e3efc7f753",
+        "width": 11,
+        "height": 13,
+        "geometry": "box",
+        "left": 833,
+        "top": 320
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "1838e58b-45c6-471f-adf2-c6e75c15b08c",
+        "width": 17,
+        "height": 6,
+        "geometry": "box",
+        "left": 813,
+        "top": 307
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "07947742-86ba-4632-ac29-2f8f5b9c8fb0",
+        "width": 5,
+        "height": 11,
+        "geometry": "box",
+        "left": 965,
+        "top": 280
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "25%",
+          "background_color": "white"
+        },
+        "uuid": "699704b6-3e81-42b1-8131-b1686157ca26",
+        "width": 67,
+        "height": 56,
+        "geometry": "box",
+        "left": 1812,
+        "top": 0
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "ab04c398-fb74-4dcd-86fc-f33c9dff3b08",
+        "width": 9,
+        "height": 32,
+        "geometry": "box",
+        "left": 530,
+        "top": 261
+      }
+    ],
+    "global_attributes": {},
+    "is_customer_fix": false
+  },
+  "customer_reviewed_by": "fieldengineering+observesign@scale.com",
+  "customer_audit_time_secs": 51.535,
+  "customer_audit_active_time_secs": 51.535,
+  "customer_audited_at": "2021-03-07T21:14:32.792Z",
+  "audits": [
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-03-07T21:14:32.792Z",
+      "audit_time_secs": 51.535,
+      "audit_active_time_secs": 51.535,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2020-11-18T06:15:45.524Z",
+      "audit_time_secs": 67.604,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    }
+  ],
+  "updated_at": "2022-04-25T12:29:11.599Z",
+  "work_started": true,
+  "isProcessed": true
+}

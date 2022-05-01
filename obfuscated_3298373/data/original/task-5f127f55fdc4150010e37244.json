@@ -1,0 +1,459 @@
+{
+  "task_id": "5f127f55fdc4150010e37244",
+  "created_at": "2020-07-18T04:49:25.844Z",
+  "completed_at": "2020-07-18T06:21:54.784Z",
+  "type": "annotation",
+  "status": "completed",
+  "instruction": "Draw a tight box around each object.",
+  "params": {
+    "attachment": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_8.jpg",
+    "attachment_type": "image",
+    "objects_to_annotate": [
+      "traffic_control_sign",
+      "construction_sign",
+      "information_sign",
+      "policy_sign",
+      "non_visible_face"
+    ],
+    "with_labels": true,
+    "min_width": 0,
+    "min_height": 0,
+    "examples": [],
+    "annotation_attributes": {
+      "occlusion": {
+        "description": "What percent of the object is occluded?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "truncation": {
+        "description": "What percent of the object is truncated?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "background_color": {
+        "description": "What color is the background of the sign?",
+        "choices": [
+          "white",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "other",
+          "not_applicable"
+        ]
+      }
+    }
+  },
+  "is_test": false,
+  "urgency": "standard",
+  "metadata": {},
+  "processed_attachments": [],
+  "project": "Traffic Sign Detection",
+  "priority": 0,
+  "customer_review_status": "accepted",
+  "customer_review_comments": [
+    "Multiple small signs, stacked on top of each other???",
+    "",
+    "Nothing Much",
+    "Nothing Much",
+    "The image is not clear.",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "prior_responses": [],
+  "callback_url": "https://example.com/callback",
+  "callback_completed": true,
+  "response": {
+    "annotations": [
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "535a6147-cdc3-49f4-9a97-002a7e3195ba",
+        "width": 53,
+        "height": 67,
+        "geometry": "box",
+        "left": 314,
+        "top": 622
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "e2284849-dfbf-44cc-98f1-fc09420102c0",
+        "width": 80,
+        "height": 73,
+        "geometry": "box",
+        "left": 419,
+        "top": 612
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "ba0d00b6-cd39-42bd-b977-a8a15cc474de",
+        "width": 205,
+        "height": 44,
+        "geometry": "box",
+        "left": 373,
+        "top": 559
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "cccda4ab-2cf6-43c6-97d3-5616152ed974",
+        "width": 42,
+        "height": 20,
+        "geometry": "box",
+        "left": 417,
+        "top": 540
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "25%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "972ac409-a86e-41eb-b0e2-f667c065dd5a",
+        "width": 55,
+        "height": 130,
+        "geometry": "box",
+        "left": 395,
+        "top": 441
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "f4501d53-1ff5-474c-81a2-fc0412d028fa",
+        "width": 75,
+        "height": 173,
+        "geometry": "box",
+        "left": 461,
+        "top": 353
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "b946a4bc-4d48-4301-8ac1-24a93d379696",
+        "width": 16,
+        "height": 33,
+        "geometry": "box",
+        "left": 696,
+        "top": 625
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "4240108c-1969-415a-ad1e-2c5a07217167",
+        "width": 23,
+        "height": 35,
+        "geometry": "box",
+        "left": 1025,
+        "top": 667
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "ec8b8899-5d60-44c1-9919-fae2902d2705",
+        "width": 24,
+        "height": 12,
+        "geometry": "box",
+        "left": 1025,
+        "top": 646
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "804358f6-1bfd-4903-9edc-9de27c5fe27b",
+        "width": 34,
+        "height": 73,
+        "geometry": "box",
+        "left": 1044,
+        "top": 554
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "725f1bb1-431c-4f3c-9602-be79c555547b",
+        "width": 33,
+        "height": 32,
+        "geometry": "box",
+        "left": 1325,
+        "top": 679
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "8e1a898d-7ed1-4abc-8ef1-4a2a47eb5cad",
+        "width": 30,
+        "height": 75,
+        "geometry": "box",
+        "left": 1332,
+        "top": 565
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "941944be-8add-4b0d-b604-32683cb47cef",
+        "width": 21,
+        "height": 72,
+        "geometry": "box",
+        "left": 1369,
+        "top": 569
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "25%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "73bb5a1f-39d6-494d-8ce0-7835a3a9dce4",
+        "width": 66,
+        "height": 62,
+        "geometry": "box",
+        "left": 1346,
+        "top": 501
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "97319a82-2635-4785-9589-ff7e0b67bf81",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1350,
+        "top": 738
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "31b6471b-0af3-4eb0-9923-57ca32972fde",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1350.701904296875,
+        "top": 742.207763671875
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "b43ba10e-0507-4eaf-ba67-c6fb49d6beca",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1350.352783203125,
+        "top": 746.7462158203125
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "3d2d21c8-7c44-4c04-911b-168c22db6b48",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1349.654541015625,
+        "top": 743.6041870117188
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "61f914e3-5699-4e7c-b3be-c9722b43c229",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1352.0982666015625,
+        "top": 740.8113403320312
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "17b437ad-168b-47c6-92de-3b308157ce0b",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1348.607177734375,
+        "top": 740.8113403320312
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "5111c4d1-5f26-4860-a834-b3890ae5d362",
+        "width": 2,
+        "height": 2,
+        "geometry": "box",
+        "left": 1351.7491455078125,
+        "top": 744.6515502929688
+      }
+    ],
+    "global_attributes": {},
+    "is_customer_fix": false
+  },
+  "customer_reviewed_by": "fieldengineering+observesign@scale.com",
+  "customer_audit_time_secs": 1.502,
+  "customer_audit_active_time_secs": 1.502,
+  "customer_audited_at": "2021-07-09T00:07:01.755Z",
+  "audits": [
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-07-09T00:07:01.755Z",
+      "audit_time_secs": 1.502,
+      "audit_active_time_secs": 1.502,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-07-09T00:06:56.125Z",
+      "audit_time_secs": 22.533,
+      "audit_active_time_secs": 22.533,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-07-08T23:34:44.199Z",
+      "audit_time_secs": 4.566,
+      "audit_active_time_secs": 3.538,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-07-08T23:32:24.261Z",
+      "audit_time_secs": 73.202,
+      "audit_active_time_secs": 73.202,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-06-03T06:23:44.835Z",
+      "audit_time_secs": 45.61,
+      "audit_active_time_secs": 33.016,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-06-03T06:17:21.308Z",
+      "audit_time_secs": 12.089,
+      "audit_active_time_secs": 12.089,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-06-03T06:16:40.059Z",
+      "audit_time_secs": 48.77,
+      "audit_active_time_secs": 48.77,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-03-07T03:54:28.618Z",
+      "audit_time_secs": 37.427,
+      "audit_active_time_secs": 34.927,
+      "audit_result": "accepted",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2020-11-20T02:17:42.394Z",
+      "audit_time_secs": 403.397,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    }
+  ],
+  "updated_at": "2022-04-17T21:15:02.625Z",
+  "work_started": true,
+  "isProcessed": true
+}

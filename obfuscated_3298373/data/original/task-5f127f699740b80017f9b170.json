@@ -1,0 +1,199 @@
+{
+  "task_id": "5f127f699740b80017f9b170",
+  "created_at": "2020-07-18T04:49:45.731Z",
+  "completed_at": "2020-07-18T05:22:44.489Z",
+  "type": "annotation",
+  "status": "completed",
+  "instruction": "Draw a tight box around each object.",
+  "params": {
+    "attachment": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_3.jpg",
+    "attachment_type": "image",
+    "objects_to_annotate": [
+      "traffic_control_sign",
+      "construction_sign",
+      "information_sign",
+      "policy_sign",
+      "non_visible_face"
+    ],
+    "with_labels": true,
+    "min_width": 0,
+    "min_height": 0,
+    "examples": [],
+    "annotation_attributes": {
+      "occlusion": {
+        "description": "What percent of the object is occluded?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "truncation": {
+        "description": "What percent of the object is truncated?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "background_color": {
+        "description": "What color is the background of the sign?",
+        "choices": [
+          "white",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "other",
+          "not_applicable"
+        ]
+      }
+    }
+  },
+  "is_test": false,
+  "urgency": "standard",
+  "metadata": {},
+  "processed_attachments": [],
+  "project": "Traffic Sign Detection",
+  "priority": 0,
+  "customer_review_status": "rejected",
+  "customer_review_comments": [
+    "All the traffic control signs are mis-labeled. These are not traffic signs in general.",
+    "Boxes not placed correctly. There are no traffic control signs visible. "
+  ],
+  "prior_responses": [],
+  "callback_url": "https://example.com/callback",
+  "response": {
+    "annotations": [
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "49a40bd1-788b-4741-b20f-10577c13f6c3",
+        "width": 54,
+        "height": 58,
+        "geometry": "box",
+        "left": 1441,
+        "top": 565
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "fdae05b8-a506-4a8f-9e5b-44006f24b1f7",
+        "width": 54,
+        "height": 72,
+        "geometry": "box",
+        "left": 1439,
+        "top": 627
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "red"
+        },
+        "uuid": "da493933-bb23-4179-a3ce-16c2b8b14d8c",
+        "width": 29,
+        "height": 41,
+        "geometry": "box",
+        "left": 374,
+        "top": 589
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "red"
+        },
+        "uuid": "15e7ee7c-ae01-434d-a0b7-54d4403d5533",
+        "width": 28,
+        "height": 38,
+        "geometry": "box",
+        "left": 535,
+        "top": 591
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "red"
+        },
+        "uuid": "e341eb36-7501-4413-9609-6d2244511000",
+        "width": 25,
+        "height": 43,
+        "geometry": "box",
+        "left": 647,
+        "top": 613
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "red"
+        },
+        "uuid": "2b0b1670-30be-4573-9fa3-c1aa9b51802a",
+        "width": 34,
+        "height": 59,
+        "geometry": "box",
+        "left": 119,
+        "top": 588
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "0fd6b443-d9e2-4d7d-af67-968cc78bda6f",
+        "width": 40,
+        "height": 27,
+        "geometry": "box",
+        "left": 1052,
+        "top": 596
+      }
+    ],
+    "global_attributes": {},
+    "is_customer_fix": false
+  },
+  "customer_reviewed_by": "fieldengineering+observesign@scale.com",
+  "customer_audit_time_secs": 345.923,
+  "customer_audit_active_time_secs": 237.857,
+  "customer_audited_at": "2021-07-24T01:22:50.488Z",
+  "audits": [
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2021-07-24T01:22:50.488Z",
+      "audit_time_secs": 345.923,
+      "audit_active_time_secs": 237.857,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    },
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2020-11-10T01:32:33.540Z",
+      "audit_time_secs": 99.563,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    }
+  ],
+  "updated_at": "2022-04-24T12:14:25.595Z",
+  "work_started": true,
+  "isProcessed": true
+}

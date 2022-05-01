@@ -1,0 +1,511 @@
+{
+  "task_id": "5f127f5f3a6b100017232099",
+  "created_at": "2020-07-18T04:49:35.591Z",
+  "completed_at": "2020-07-18T06:01:57.351Z",
+  "type": "annotation",
+  "status": "completed",
+  "instruction": "Draw a tight box around each object.",
+  "params": {
+    "attachment": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_6.png",
+    "attachment_type": "image",
+    "objects_to_annotate": [
+      "traffic_control_sign",
+      "construction_sign",
+      "information_sign",
+      "policy_sign",
+      "non_visible_face"
+    ],
+    "with_labels": true,
+    "min_width": 0,
+    "min_height": 0,
+    "examples": [],
+    "annotation_attributes": {
+      "occlusion": {
+        "description": "What percent of the object is occluded?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "truncation": {
+        "description": "What percent of the object is truncated?",
+        "choices": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "background_color": {
+        "description": "What color is the background of the sign?",
+        "choices": [
+          "white",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "other",
+          "not_applicable"
+        ]
+      }
+    }
+  },
+  "is_test": false,
+  "urgency": "standard",
+  "metadata": {},
+  "processed_attachments": [],
+  "project": "Traffic Sign Detection",
+  "priority": 0,
+  "customer_review_status": "rejected",
+  "customer_review_comments": [
+    "Large area is annotated that does not contain traffic signals"
+  ],
+  "prior_responses": [],
+  "callback_url": "https://example.com/callback",
+  "response": {
+    "annotations": [
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "green"
+        },
+        "uuid": "9a3eac82-aeca-48df-a58f-76179d26e8ac",
+        "width": 146,
+        "height": 109,
+        "geometry": "box",
+        "left": 1106,
+        "top": 0
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "green"
+        },
+        "uuid": "1e6d591d-0ae5-4710-99da-8f0baf03d63a",
+        "width": 20,
+        "height": 44,
+        "geometry": "box",
+        "left": 998,
+        "top": 20
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "75%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "27f4e6b1-188f-4e92-8a3e-cd9dcee139c2",
+        "width": 38,
+        "height": 19,
+        "geometry": "box",
+        "left": 1010,
+        "top": 0
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "a40ed445-e508-4e8f-ab3a-d91b6f2ae1b3",
+        "width": 69,
+        "height": 76,
+        "geometry": "box",
+        "left": 914,
+        "top": 38
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "cdbdb50c-f40e-463e-b2ee-c4f50ef9aa90",
+        "width": 38,
+        "height": 76,
+        "geometry": "box",
+        "left": 914,
+        "top": 160
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "50%",
+          "background_color": "other"
+        },
+        "uuid": "1f4105b0-8651-4fdf-b673-b74136f56ad6",
+        "width": 41,
+        "height": 52,
+        "geometry": "box",
+        "left": 835,
+        "top": 0
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "9da76450-bf48-4809-8ded-2fb78f79d77a",
+        "width": 31,
+        "height": 85,
+        "geometry": "box",
+        "left": 841,
+        "top": 85
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "50%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "08333b85-b375-447f-a66f-99f1b053fe9c",
+        "width": 88,
+        "height": 86,
+        "geometry": "box",
+        "left": 812,
+        "top": 85
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "1331c684-b2b8-4f25-8c78-ab304f5fb7c4",
+        "width": 66,
+        "height": 66,
+        "geometry": "box",
+        "left": 824,
+        "top": 187
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "50%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "ae0b82b0-76bf-4c14-9dce-7766da968ad3",
+        "width": 46,
+        "height": 47,
+        "geometry": "box",
+        "left": 880,
+        "top": 206
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "84bc700a-b94c-4760-9222-89af07d1d533",
+        "width": 71,
+        "height": 15,
+        "geometry": "box",
+        "left": 754,
+        "top": 250
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "bb95de70-d32f-4a3e-9a25-28300e6f6dc6",
+        "width": 32,
+        "height": 28,
+        "geometry": "box",
+        "left": 761,
+        "top": 276
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "5ee54a43-fdce-4bb5-b5e7-0f162cccceba",
+        "width": 28,
+        "height": 73,
+        "geometry": "box",
+        "left": 744,
+        "top": 166
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "022865ce-4287-4876-86bf-3246ae1dad9f",
+        "width": 51,
+        "height": 47,
+        "geometry": "box",
+        "left": 531,
+        "top": 26
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "02d02470-3a8e-4889-861e-c7b9b40e60ec",
+        "width": 37,
+        "height": 18,
+        "geometry": "box",
+        "left": 538,
+        "top": 75
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "50%",
+          "truncation": "0%",
+          "background_color": "green"
+        },
+        "uuid": "3523b86f-1429-4300-a225-a4b13612ad31",
+        "width": 32,
+        "height": 9,
+        "geometry": "box",
+        "left": 481,
+        "top": 125
+      },
+      {
+        "label": "policy_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "white"
+        },
+        "uuid": "3a855e84-a5c0-4e6c-acd7-a721b5023bc5",
+        "width": 15,
+        "height": 14,
+        "geometry": "box",
+        "left": 467,
+        "top": 109
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "50%",
+          "background_color": "other"
+        },
+        "uuid": "04e71569-03c4-48d6-b566-982df88560ff",
+        "width": 41,
+        "height": 52,
+        "geometry": "box",
+        "left": 414,
+        "top": 1
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "7160965f-5d27-4291-b3f5-f677a8205c77",
+        "width": 10,
+        "height": 24,
+        "geometry": "box",
+        "left": 455,
+        "top": 107
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "053c011a-9fe1-4ff1-8140-9d7c2310b7b2",
+        "width": 12,
+        "height": 27,
+        "geometry": "box",
+        "left": 325,
+        "top": 82
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "86f7d374-8574-42be-ab2d-3f2945992f31",
+        "width": 42,
+        "height": 8,
+        "geometry": "box",
+        "left": 267,
+        "top": 102
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "other"
+        },
+        "uuid": "d2adfa57-88fc-4361-b450-5d13e0040f62",
+        "width": 8,
+        "height": 20,
+        "geometry": "box",
+        "left": 228,
+        "top": 169
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "50%",
+          "truncation": "0%",
+          "background_color": "green"
+        },
+        "uuid": "daeedc6f-3c26-4eed-9adb-c4454b7b0695",
+        "width": 20,
+        "height": 6,
+        "geometry": "box",
+        "left": 496,
+        "top": 212
+      },
+      {
+        "label": "construction_sign",
+        "attributes": {
+          "occlusion": "50%",
+          "truncation": "0%",
+          "background_color": "orange"
+        },
+        "uuid": "478496a5-1d09-4d53-889a-ef56a561b54b",
+        "width": 32,
+        "height": 31,
+        "geometry": "box",
+        "left": 559,
+        "top": 191
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "45ba8760-8e8b-442b-8a24-5be005d47bb4",
+        "width": 24,
+        "height": 5,
+        "geometry": "box",
+        "left": 121,
+        "top": 186
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "915c0153-23d2-47aa-938d-97d352838105",
+        "width": 20,
+        "height": 20,
+        "geometry": "box",
+        "left": 136,
+        "top": 174
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "c4aeb4bc-455e-45f0-a10d-0529386d9952",
+        "width": 11,
+        "height": 13,
+        "geometry": "box",
+        "left": 182,
+        "top": 183
+      },
+      {
+        "label": "traffic_control_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "50%",
+          "background_color": "other"
+        },
+        "uuid": "860bbaaf-b080-46e6-b8a4-80a0ca38b946",
+        "width": 39,
+        "height": 31,
+        "geometry": "box",
+        "left": 203,
+        "top": 0
+      },
+      {
+        "label": "information_sign",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "25%",
+          "background_color": "white"
+        },
+        "uuid": "0ac0c72e-d384-4039-80bb-7ac9d71a4d87",
+        "width": 129,
+        "height": 29,
+        "geometry": "box",
+        "left": 274,
+        "top": 1
+      },
+      {
+        "label": "non_visible_face",
+        "attributes": {
+          "occlusion": "0%",
+          "truncation": "0%",
+          "background_color": "not_applicable"
+        },
+        "uuid": "25e6e90c-7acb-4786-a0fb-ca7b10fc3687",
+        "width": 518,
+        "height": 654,
+        "geometry": "box",
+        "left": 2,
+        "top": 196
+      }
+    ],
+    "global_attributes": {},
+    "is_customer_fix": false
+  },
+  "customer_reviewed_by": "fieldengineering+observesign@scale.com",
+  "customer_audit_time_secs": 216.509,
+  "customer_audited_at": "2020-11-18T06:07:27.164Z",
+  "audits": [
+    {
+      "audited_by": "fieldengineering+observesign@scale.com",
+      "audited_at": "2020-11-18T06:07:27.164Z",
+      "audit_time_secs": 216.509,
+      "audit_result": "rejected",
+      "audit_source": "customer"
+    }
+  ],
+  "updated_at": "2022-04-18T13:58:34.359Z",
+  "work_started": true,
+  "isProcessed": true
+}
