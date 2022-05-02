@@ -9,24 +9,21 @@ See data/original for examples of task json.
 data/original: Downloaded json from the 8 task examples.
 data/modified: The 8 tasks in original modified to have some quality problems.
 
+--------
+I was not able to get an API call to get a single task json.
+I.e. I tried
 
------------
-Thoughts:
+```
+url = "https://api.scale.com/v1/tasks"
+auth = HTTPBasicAuth('{{apikey}}', '') # No password
+response = requests.request("GET", url, headers=headers, auth=auth)
+print(response.text)
+```
 
-1. Using edge detection to detect edges in the image and see if the annotations
-are close to some of the edges discovered.
+Which got back tasks but they did not have the type of tasks in the 8 examples.
 
-2. Adding some known (labelled) images in new image data sets and comparing the
-new annotations with known good annotations to understand quality.
+I also tried /v1/task/<task_id> but got permission problems.
 
-3. Check to see if the boxes overlap and check if the occlusion attributes
-are set for such images.
+So I created a dataset of the 8 tasks.
 
-4. Comparing the same task results from multiple people and flagging discrepencies.
-
-5. Giving a quality score (like pagerank) to annotators based on
-"Good annotators are similar to other good annotators".
-
-6. Understanding the annotation process and what affects the process.
-I.e. length of time, speed of annotations/tasks. Tracking these metrics
-and creating a model for quality for each task.
+But the code works at a task level.
